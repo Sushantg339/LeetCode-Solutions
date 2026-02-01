@@ -13,20 +13,24 @@
 var detectCycle = function(head) {
     if(head === null || head.next === null) return null
 
-    let map = new Map()
+    let slow = head
+    let fast = head
 
-    let temp= head
+    while(fast && fast.next){
+        fast = fast.next.next
+        slow = slow.next
 
-    while(temp !== null){
-        if(map.has(temp)){
-            return temp
-        }else{
-            map.set(temp , 1)
-        }
-
-        temp = temp.next
+        if(slow === fast) break
     }
 
-    return null
+    if(!fast || !fast.next) return null
 
+    slow = head
+
+    while(slow !== fast){
+        slow = slow.next
+        fast = fast.next
+    }
+
+    return fast
 };
