@@ -1,21 +1,16 @@
 function smallestBalancedIndex(nums: number[]): number {
     let n: number = nums.length
 
-    let totalProduct = 1
+    let suffix = new Array(n).fill(1)
 
-    for(let i=1 ; i<n ; i++){
-        totalProduct *= nums[i]
+    for (let i = n - 2; i >= 0; i--) {
+        suffix[i] = suffix[i + 1] * nums[i + 1]
     }
 
     let leftSum = 0
-    let rightProduct = totalProduct
 
     for(let i=0 ; i<n ; i++){
-        if(i>0){
-            rightProduct /= nums[i]
-        }
-
-        if(leftSum === rightProduct) return i
+        if(leftSum === suffix[i]) return i
 
         leftSum += nums[i]
     }
