@@ -1,23 +1,23 @@
 function smallestBalancedIndex(nums: number[]): number {
-    let sum: number[] = new Array(nums.length)
-    sum[0] = 0
+    let n: number = nums.length
 
-    for(let i=1 ; i<nums.length ; i++){
-        sum[i] = sum[i-1] + nums[i-1]
+    let totalProduct = 1
+
+    for(let i=1 ; i<n ; i++){
+        totalProduct *= nums[i]
     }
 
-    let mul: number[] = new Array(nums.length)
+    let leftSum = 0
+    let rightProduct = totalProduct
 
-    mul[mul.length-1] = 1
-
-    for(let i=mul.length-2 ; i>=0 ; i--){
-        mul[i] = mul[i+1] * nums[i+1]
-    }
-
-    for(let i=0 ; i<nums.length ; i++){
-        if(mul[i] === sum[i]){
-            return i
+    for(let i=0 ; i<n ; i++){
+        if(i>0){
+            rightProduct /= nums[i]
         }
+
+        if(leftSum === rightProduct) return i
+
+        leftSum += nums[i]
     }
 
     return -1
