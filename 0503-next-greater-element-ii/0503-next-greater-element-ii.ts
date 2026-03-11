@@ -11,9 +11,9 @@ function nextGreaterElements(nums: number[]): number[] {
 
         if(i<n){
             if(!st.length){
-                nge[i%n] = -1
+                nge[i] = -1
             }else{
-                nge[i%n] = st[st.length-1]
+                nge[i] = st[st.length-1]
             }
         }
 
