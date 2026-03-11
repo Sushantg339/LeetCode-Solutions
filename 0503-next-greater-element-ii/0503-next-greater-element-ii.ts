@@ -1,23 +1,24 @@
 function nextGreaterElements(nums: number[]): number[] {
-    let n = nums.length
+    let st: number[] = []
+    let n: number = nums.length
 
+    let nge: number[] = new Array(n)
 
-    let ans: number[] = []
+    for(let i=2*n-1 ; i>=0 ; i--){
+        while(st.length && st[st.length-1] <= nums[i%n]){
+            st.pop()
+        }
 
-    for(let i=0 ; i<nums.length ; i++){
-        let elem = -1
-        
-        for(let step = 1; step < n ; step++){
-            let j = (i+step)%n
-
-            if(nums[j] > nums[i]){
-                elem = nums[j]
-                break
+        if(i<n){
+            if(!st.length){
+                nge[i%n] = -1
+            }else{
+                nge[i%n] = st[st.length-1]
             }
         }
 
-        ans.push(elem)
+        st.push(nums[i%n])
     }
 
-    return ans
+    return nge
 };
