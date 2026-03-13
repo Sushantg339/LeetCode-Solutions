@@ -1,51 +1,28 @@
-function largestRectangleArea(arr: number[]): number {
-    let nse: number[] = findNSE(arr)
-    let pse: number[] = findPSE(arr)
-
-    let max = 0;
-
-    for(let i=0 ; i<arr.length ; i++){
-        let width = nse[i] - pse[i] - 1
-        let area = width * arr[i]
-
-        max = max > area ? max : area
-    }
-
-    return max
-};
-
-function findNSE(arr: number[]): number[]{
+function largestRectangleArea(heights: number[]): number {
     let st: number[] = []
-    let n = arr.length
-    let nse: number[] = new Array(n)
-
-    for(let i=n-1 ; i>=0 ; i--){
-        while(st.length && arr[st[st.length-1]] >= arr[i]){
-            st.pop()
-        }
-
-        nse[i] = st.length ? st[st.length-1] : n
-
-        st.push(i)
-    }
-
-    return nse
-}
-
-function findPSE(arr: number[]): number[]{
-    let st: number[] = []
-    let n: number = arr.length
-    let pse: number[] = new Array(n)
+    let n = heights.length
+    let maxArea = 0
 
     for(let i=0 ; i<n ; i++){
-        while(st.length && arr[st[st.length-1]] >= arr[i]){
-            st.pop()
+        while(st.length && heights[st[st.length-1]] > heights[i]){
+            let height = heights[st.pop()]
+
+            let pse = st.length ? st[st.length-1] : -1
+            let width = i - pse - 1
+
+            maxArea = Math.max(maxArea , height * width)
         }
-
-        pse[i] = st.length ? st[st.length-1] : -1
-
         st.push(i)
     }
 
-    return pse
-}
+    while(st.length){
+        let height = heights[st.pop()]
+
+        let pse = st.length ? st[st.length-1] : -1
+        let width = heights.length - pse - 1
+
+        maxArea = Math.max(maxArea , height * width)
+    }
+
+    return maxArea
+};
