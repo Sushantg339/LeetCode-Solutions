@@ -11,22 +11,20 @@
  */
 class Solution {
 public:
-    void solve(TreeNode* node, vector<int>& ans){
+    void inorder(TreeNode* node, vector<int>& ans){
         if(node == nullptr){
             return;
         }
 
-        solve(node->left, ans);
-        
+        inorder(node->left, ans);
         ans.push_back(node->val);
-
-        solve(node->right, ans);
+        inorder(node->right, ans);
     }
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> ans;
+        if(root == nullptr) return ans;
 
-        solve(root, ans);
-
+        inorder(root, ans);
         return ans;
     }
 };
