@@ -12,20 +12,19 @@
 class Solution {
 public:
     int check(TreeNode* node){
-        if(node == nullptr){
-            return 0;
-        }
+        if(node == nullptr) return 0;
 
         int lh = check(node->left);
         int rh = check(node->right);
 
         if(lh == -1 || rh == -1) return -1;
-        if(abs(rh-lh) > 1) return -1;
+
+        if(abs(lh-rh) > 1) return -1;
 
         return max(lh, rh)+1;
     }
     bool isBalanced(TreeNode* root) {
-        if(!root) return true;
+        if(root == nullptr) return true;
 
         return check(root) == -1 ? false : true;
     }
