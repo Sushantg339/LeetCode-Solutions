@@ -6,22 +6,26 @@
  *     TreeNode *right;
  *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left),
+ * right(right) {}
  * };
  */
 class Solution {
 public:
     int maxSum = INT_MIN;
-    int findSum(TreeNode* node){
-        if(!node) return 0;
 
-        int leftSum = max(0, findSum(node->left));
-        int rightSum =max(0, findSum(node->right));
+    int findSum(TreeNode* node) {
+        if (node == nullptr)
+            return 0;
 
-        int currSum = leftSum+rightSum+node->val;
+        int lSum = max(0, findSum(node->left));
+        int rSum = max(0, findSum(node->right));
+
+        int currSum = lSum + rSum + node->val;
+
         maxSum = max(maxSum, currSum);
 
-        return node->val + max(leftSum, rightSum);
+        return node->val + max(lSum, rSum);
     }
     int maxPathSum(TreeNode* root) {
         findSum(root);
