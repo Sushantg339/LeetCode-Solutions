@@ -1,14 +1,13 @@
 class Solution {
 public:
-    void reverse(vector<int>& nums, int i, int j){
+    void reverse(vector<int> &nums, int i, int j){
         while(i<j){
-            int temp = nums[i];
-            nums[i] = nums[j];
-            nums[j] = temp;
+            swap(nums[i], nums[j]);
             i++;
             j--;
         }
     }
+
     void nextPermutation(vector<int>& nums) {
         int n = nums.size();
         int ind = -1;
@@ -25,17 +24,16 @@ public:
             return;
         }
 
-        for(int i=n-1 ; i>=0 ; i--){
-            if(nums[ind] < nums[i]){
-                int temp = nums[ind];
-                nums[ind] = nums[i];
-                nums[i] = temp;
+        for(int i=n-1 ; i>=ind ; i--){
+            if(nums[i] > nums[ind]){
+                swap(nums[i], nums[ind]);
 
                 break;
             }
         }
 
         reverse(nums, ind+1, n-1);
+
         return;
     }
 };
