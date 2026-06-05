@@ -1,27 +1,29 @@
 class Solution {
 public:
+    void reverse(vector<int> &arr){
+        int i=0;
+        int j=arr.size()-1;
+        while(i<j){
+            swap(arr[i], arr[j]);
+            i++;
+            j--;
+        }
+    }
     void rotate(vector<vector<int>>& matrix) {
+        // transpose
+
         int n = matrix.size();
+        int m = matrix[0].size();
 
         for(int i=0 ; i<n ; i++){
-            for(int j=0 ; j<=i ; j++){
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
+            for(int j=i+1 ; j<m ; j++){
+                swap(matrix[i][j], matrix[j][i]);
             }
         }
 
+        // reverse
         for(int i=0 ; i<n ; i++){
-            int j = 0;
-            int k = n-1;
-
-            while(j<k){
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[i][k];
-                matrix[i][k] = temp;
-                j++;
-                k--;
-            }
+            reverse(matrix[i]);
         }
     }
 };
