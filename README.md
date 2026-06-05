@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0031-next-permutation](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0031-next-permutation/) | Medium |
+| [0053-maximum-subarray](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0118-pascals-triangle](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0118-pascals-triangle/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
@@ -54,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0053-maximum-subarray](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0118-pascals-triangle](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0118-pascals-triangle/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -62,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0053-maximum-subarray](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
