@@ -15,10 +15,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0238-product-of-array-except-self/) | Medium |
+| [2574-left-and-right-sum-differences](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2574-left-and-right-sum-differences/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0238-product-of-array-except-self/) | Medium |
+| [2574-left-and-right-sum-differences](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2574-left-and-right-sum-differences/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
