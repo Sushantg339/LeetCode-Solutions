@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0238-product-of-array-except-self/) | Medium |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2574-left-and-right-sum-differences/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -56,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -65,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0073-set-matrix-zeroes](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
