@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0073-set-matrix-zeroes](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0141-linked-list-cycle](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Matrix
@@ -103,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0031-next-permutation](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0031-next-permutation/) | Medium |
 | [0075-sort-colors](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0075-sort-colors/) | Medium |
 | [0088-merge-sorted-array](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0088-merge-sorted-array/) | Easy |
+| [0141-linked-list-cycle](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -137,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0024-swap-nodes-in-pairs](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0024-swap-nodes-in-pairs/) | Medium |
+| [0141-linked-list-cycle](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0206-reverse-linked-list](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0206-reverse-linked-list/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
