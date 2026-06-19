@@ -18,9 +18,11 @@ public:
 
             currRow += down ? 1 : -1;
         }
-        
+
         string ans;
-        for (string &row : rows) ans += row;
+        for(int i=0 ; i<numRows ; i++){
+            ans += rows[i];
+        }
 
         return ans;
     }
