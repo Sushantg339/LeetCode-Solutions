@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0002-add-two-numbers/) | Medium |
 | [0048-rotate-image](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/0048-rotate-image/) | Medium |
+| [1344-angle-between-hands-of-a-clock](https://github.com/Sushantg339/LeetCode-Solutions/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
